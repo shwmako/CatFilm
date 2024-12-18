@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/exo_2_bold</item>
+        <item>@font/exo_2_semibold</item>
+        <item>@font/lato_bold</item>
+        <item>@font/lexend</item>
+        <item>@font/lexend_black</item>
+        <item>@font/lexend_thin</item>
+        <item>@font/outfit_bold</item>
+        <item>@font/outfit_extrabold</item>
+        <item>@font/outfit_medium</item>
+    </array>
+</resources>

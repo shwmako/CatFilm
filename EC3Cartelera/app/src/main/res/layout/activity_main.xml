@@ -1,0 +1,60 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivLogoInicio"
+        android:layout_width="65dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginStart="15dp"
+        app:srcCompat="@drawable/inicio"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivPerfil"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="240dp"
+        app:srcCompat="@drawable/p1"
+        tools:layout_editor_absoluteX="347dp"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintStart_toEndOf="@+id/ivLogoInicio"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/exo_2_bold"
+        android:text="Cartelera"
+        android:textColor="#43054D"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogoInicio" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCartelera"
+        android:layout_width="289dp"
+        android:layout_height="615dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        app:layout_constraintVertical_bias="0.0"
+        tools:itemCount="20"
+        tools:listitem="@layout/item_peliculas_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
